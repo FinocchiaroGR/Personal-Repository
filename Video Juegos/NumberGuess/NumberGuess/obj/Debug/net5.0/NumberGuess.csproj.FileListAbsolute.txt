@@ -1,0 +1,15 @@
+/Users/finocchiarog/Visual Studio Projects/C#/NumberGuess/NumberGuess/bin/Debug/net5.0/NumberGuess.deps.json
+/Users/finocchiarog/Visual Studio Projects/C#/NumberGuess/NumberGuess/bin/Debug/net5.0/NumberGuess.runtimeconfig.json
+/Users/finocchiarog/Visual Studio Projects/C#/NumberGuess/NumberGuess/bin/Debug/net5.0/NumberGuess.runtimeconfig.dev.json
+/Users/finocchiarog/Visual Studio Projects/C#/NumberGuess/NumberGuess/bin/Debug/net5.0/NumberGuess.dll
+/Users/finocchiarog/Visual Studio Projects/C#/NumberGuess/NumberGuess/bin/Debug/net5.0/ref/NumberGuess.dll
+/Users/finocchiarog/Visual Studio Projects/C#/NumberGuess/NumberGuess/bin/Debug/net5.0/NumberGuess.pdb
+/Users/finocchiarog/Visual Studio Projects/C#/NumberGuess/NumberGuess/obj/Debug/net5.0/NumberGuess.csprojAssemblyReference.cache
+/Users/finocchiarog/Visual Studio Projects/C#/NumberGuess/NumberGuess/obj/Debug/net5.0/NumberGuess.GeneratedMSBuildEditorConfig.editorconfig
+/Users/finocchiarog/Visual Studio Projects/C#/NumberGuess/NumberGuess/obj/Debug/net5.0/NumberGuess.AssemblyInfoInputs.cache
+/Users/finocchiarog/Visual Studio Projects/C#/NumberGuess/NumberGuess/obj/Debug/net5.0/NumberGuess.AssemblyInfo.cs
+/Users/finocchiarog/Visual Studio Projects/C#/NumberGuess/NumberGuess/obj/Debug/net5.0/NumberGuess.csproj.CoreCompileInputs.cache
+/Users/finocchiarog/Visual Studio Projects/C#/NumberGuess/NumberGuess/obj/Debug/net5.0/NumberGuess.dll
+/Users/finocchiarog/Visual Studio Projects/C#/NumberGuess/NumberGuess/obj/Debug/net5.0/ref/NumberGuess.dll
+/Users/finocchiarog/Visual Studio Projects/C#/NumberGuess/NumberGuess/obj/Debug/net5.0/NumberGuess.pdb
+/Users/finocchiarog/Visual Studio Projects/C#/NumberGuess/NumberGuess/obj/Debug/net5.0/NumberGuess.genruntimeconfig.cache

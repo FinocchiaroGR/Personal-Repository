@@ -1,0 +1,15 @@
+/Users/finocchiarog/Visual Studio Projects/C#/RandomTest/RandomTest/obj/Debug/net5.0/RandomTest.csprojAssemblyReference.cache
+/Users/finocchiarog/Visual Studio Projects/C#/RandomTest/RandomTest/obj/Debug/net5.0/RandomTest.GeneratedMSBuildEditorConfig.editorconfig
+/Users/finocchiarog/Visual Studio Projects/C#/RandomTest/RandomTest/obj/Debug/net5.0/RandomTest.AssemblyInfoInputs.cache
+/Users/finocchiarog/Visual Studio Projects/C#/RandomTest/RandomTest/obj/Debug/net5.0/RandomTest.AssemblyInfo.cs
+/Users/finocchiarog/Visual Studio Projects/C#/RandomTest/RandomTest/obj/Debug/net5.0/RandomTest.csproj.CoreCompileInputs.cache
+/Users/finocchiarog/Visual Studio Projects/C#/RandomTest/RandomTest/bin/Debug/net5.0/RandomTest.deps.json
+/Users/finocchiarog/Visual Studio Projects/C#/RandomTest/RandomTest/bin/Debug/net5.0/RandomTest.runtimeconfig.json
+/Users/finocchiarog/Visual Studio Projects/C#/RandomTest/RandomTest/bin/Debug/net5.0/RandomTest.runtimeconfig.dev.json
+/Users/finocchiarog/Visual Studio Projects/C#/RandomTest/RandomTest/bin/Debug/net5.0/RandomTest.dll
+/Users/finocchiarog/Visual Studio Projects/C#/RandomTest/RandomTest/bin/Debug/net5.0/ref/RandomTest.dll
+/Users/finocchiarog/Visual Studio Projects/C#/RandomTest/RandomTest/bin/Debug/net5.0/RandomTest.pdb
+/Users/finocchiarog/Visual Studio Projects/C#/RandomTest/RandomTest/obj/Debug/net5.0/RandomTest.dll
+/Users/finocchiarog/Visual Studio Projects/C#/RandomTest/RandomTest/obj/Debug/net5.0/ref/RandomTest.dll
+/Users/finocchiarog/Visual Studio Projects/C#/RandomTest/RandomTest/obj/Debug/net5.0/RandomTest.pdb
+/Users/finocchiarog/Visual Studio Projects/C#/RandomTest/RandomTest/obj/Debug/net5.0/RandomTest.genruntimeconfig.cache

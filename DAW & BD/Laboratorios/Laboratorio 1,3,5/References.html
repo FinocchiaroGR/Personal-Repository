@@ -21,30 +21,19 @@
                 <button class="navbar-toggler" type="button"></button>
                 <div class="collapse navbar-collapse">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#Pasion">Pasión</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#HTML">HTML</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#CSS">CSS</a></li>
+                        <li class="nav-item dropdown dmenu">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">JS</a>
+                            <div class="dropdown-menu sm-menu">
+                                <a class="dropdown-item" href="index.html#JavaSript">Preguntas</a>
+                                <a class="dropdown-item" href="JavaScript.html#JS">Actividades</a>
+                            </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html#Pasion">Pasión</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html#HTML">HTML</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html#CSS">CSS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="JavaScript.html#JS">JS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="game.html#GAME">GAME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html#About_Me">Acerca de Mi</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#Referencias">Referencias</a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#About_Me">Acerca de Mi</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Referencias">Referencias</a></li>
                     </ul>
                     <!--Social Media-->
                     <div class="social-part">
@@ -73,6 +62,11 @@
                         https://www.scribd.com/presentation/378958589/Diferencias-HTML</a>
                     </li>
                     <li>
+                        Java for Testers (2018). Some Similarities Between Java And JavaScript. Evil Tester. Ruperado de: 
+                        <a href= "https://www.eviltester.com/2018/05/some-similarities-between-java-and-javascript.html">
+                            https://www.eviltester.com/2018/05/some-similarities-between-java-and-javascript.html</a>
+                    </li>
+                    <li>
                         Lázaro, D. (2018) Códigos de estado HTTP. Diego Lázaro. Recuperado de: <a href= "https://diego.com.es/codigos-de-estado-http">
                         https://diego.com.es/codigos-de-estado-http</a>
                     </li>
@@ -91,6 +85,16 @@
                         <a href= "https://www.coursehero.com/file/78877611/Systems-Development-Life-Cyclepdf/">
                             https://www.coursehero.com/file/78877611/Systems-Development-Life-Cyclepdf/</a>
                     </li>
+                    <li>
+                        W3schools.com (s.f.). JavaScript Array Methods. W3schools.com. Ruperado de: 
+                        <a href= "https://www.w3schools.com/js/js_array_methods.asp">
+                            https://www.w3schools.com/js/js_array_methods.asp</a>
+                    </li>
+                    <li>
+                        W3schools.com (s.f.). JavaScript Date Methods. W3schools.com. Ruperado de: 
+                        <a href= "https://www.w3schools.com/js/js_date_methods.asp">
+                            https://www.w3schools.com/js/js_date_methods.asp</a>
+                    </li>
                 </ul>
             </div>
         </main>
@@ -99,5 +103,15 @@
                 <em>Editor Usado: </em><a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>
             </p>
         </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('.navbar-light .dmenu').hover(function () {
+                    $(this).find('.sm-menu').first().stop(true, true).slideDown(150);
+                }, function () {
+                    $(this).find('.sm-menu').first().stop(true, true).slideUp(105)
+                });
+            });
+        </script>
     </body>
 </html>

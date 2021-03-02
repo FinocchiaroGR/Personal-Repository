@@ -21,30 +21,19 @@
                 <button class="navbar-toggler" type="button"></button>
                 <div class="collapse navbar-collapse">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#Pasion">Pasión</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#HTML">HTML</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#CSS">CSS</a></li>
+                        <li class="nav-item dropdown dmenu">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">JS</a>
+                            <div class="dropdown-menu sm-menu">
+                                <a class="dropdown-item" href="index.html#JavaSript">Preguntas</a>
+                                <a class="dropdown-item" href="JavaScript.html#JS">Actividades</a>
+                            </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html#Pasion">Pasión</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html#HTML">HTML</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html#CSS">CSS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="JavaScript.html#JS">JS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#GAME">GAME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html#About_Me">Acerca de Mi</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#Referencias">Referencias</a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#About_Me">Acerca de Mi</a></li>
+                        <li class="nav-item"><a class="nav-link" href="References.html#Referencias">Referencias</a></li>
                     </ul>
                     <!--Social Media-->
                     <div class="social-part">
@@ -67,5 +56,15 @@
             </p>
         </footer>
         <script src="JS/game.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('.navbar-light .dmenu').hover(function () {
+                    $(this).find('.sm-menu').first().stop(true, true).slideDown(150);
+                }, function () {
+                    $(this).find('.sm-menu').first().stop(true, true).slideUp(105)
+                });
+            });
+        </script>
     </body>
 </html>

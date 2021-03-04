@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Head-->
+        <meta charset="UTF-8">
+        <meta name="description" content="Laboratorio 1, 3 del Bloque 1 ISC. Hecho por Giovanni Finocchiaro Ramirez Matricula: A01704007">
+        <title>Giovanni Finocchiaro</title>
+
+        <!--Links StyleSheet Alt-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!--My StyleSheet-->
+        <link rel="stylesheet" href="CSS/style.css">
+
+    </head>
+    <body>
+
+        <header>
+            <!--NavBar-->
+            <nav class="navbar navbar-expand-sm   navbar-light bg-light">
+                <button class="navbar-toggler" type="button"></button>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#Pasion">Pasión</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#HTML">HTML</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#CSS">CSS</a></li>
+                        <li class="nav-item dropdown dmenu">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">JS</a>
+                            <div class="dropdown-menu sm-menu">
+                                <a class="dropdown-item" href="#index.html#JavaSript">Preguntas</a>
+                                <a class="dropdown-item" href="JavaScript.html#JS">Actividades</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#Node">Node</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#About_Me">Acerca de Mi</a></li>
+                        <li class="nav-item"><a class="nav-link" href="References.html#Referencias">Referencias</a></li>
+                    </ul>
+                    <!--Social Media-->
+                    <div class="social-part">
+                        <a href="https://www.facebook.com/FinocchiaroGR" target="_blank" title="Facebook"> <i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/finocchiarog/" target="_blank" title="Instagram"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div id="Node"></div>
+            <h2>Laboratorio 5</h2>
+            <div style="text-align: center;">
+                <button id="Actividad 1" onclick="conteo()">Actividad 1</button>
+                <button id="Actividad 2" onclick="tiempoParaSumar()">Actividad 2</button>
+                <button id="Actividad 3" onclick="contador()">Actividad 3</button>
+            </div>
+        </main>
+        <footer>
+            <p>
+                <em>Editor Usado: </em><a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>
+            </p>
+        </footer>
+        <script src="JS/Node.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('.navbar-light .dmenu').hover(function () {
+                    $(this).find('.sm-menu').first().stop(true, true).slideDown(150);
+                }, function () {
+                    $(this).find('.sm-menu').first().stop(true, true).slideUp(105)
+                });
+            });
+        </script>
+    </body>
+</html>
+

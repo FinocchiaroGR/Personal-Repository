@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html onclick="jump()">
     <head>
         <!--Head-->
         <meta charset="UTF-8">
@@ -21,6 +21,7 @@
                 <button class="navbar-toggler" type="button"></button>
                 <div class="collapse navbar-collapse">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="index.html#Pasion">Pasión</a></li>
                         <li class="nav-item"><a class="nav-link" href="index.html#HTML">HTML</a></li>
                         <li class="nav-item"><a class="nav-link" href="index.html#CSS">CSS</a></li>
@@ -31,6 +32,7 @@
                                 <a class="dropdown-item" href="JavaScript.html#JS">Actividades</a>
                             </div>
                         </li>
+                        <li class="nav-item"><a class="nav-link" href="Node.html#Node">Node</a></li>
                         <li class="nav-item"><a class="nav-link" href="index.html#About_Me">Acerca de Mi</a></li>
                         <li class="nav-item"><a class="nav-link" href="References.html#Referencias">Referencias</a></li>
                     </ul>
@@ -43,15 +45,10 @@
             </nav>
         </header>
         <main>
-            <div id="JS"></div>
-            <h2>Laboratorio 5</h2>
-            <div style="text-align: center;">
-                <button id="Actividad 1" onclick="conteo()">Actividad 1</button>
-                <button id="Actividad 2" onclick="tiempoParaSumar()">Actividad 2</button>
-                <button id="Actividad 3" onclick="contador()">Actividad 3</button>
-                <button id="Actividad 4" onclick="promedioArr()">Actividad 4</button>
-                <button id="Actividad 5" onclick="inverso()">Actividad 5</button>
-                <button id="Actividad 6" onclick="location.href='game.html'">Actividad 6</button>
+            <h3> Actividad 6</h3>
+            <div id="GAME">
+                <div id="CHARACTER"></div>
+                    <div id="block"></div>
             </div>
         </main>
         <footer>
@@ -59,7 +56,7 @@
                 <em>Editor Usado: </em><a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>
             </p>
         </footer>
-        <script src="JS/laboratorio5.js"></script>
+        <script src="JS/game.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script type="text/javascript">
             $(document).ready(function () {
@@ -72,4 +69,3 @@
         </script>
     </body>
 </html>
-

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Head-->
+        <meta charset="UTF-8">
+        <meta name="description" content="Laboratorio 1, 3 del Bloque 1 ISC. Hecho por Giovanni Finocchiaro Ramirez Matricula: A01704007">
+        <title>Giovanni Finocchiaro</title>
+
+        <!--Materialize-->
+        <link rel="stylesheet" href="CSS/materialize.css">
+
+    </head>
+    <body>
+
+        <header>
+            <!--NavBar-->
+            <ul id="js" class="dropdown-content">
+                <li><a href="index.html#JavaSript">Preguntas</a></li>
+                <li><a href="JavaScript.html#JS">Actividades</a></li>
+            </ul>
+            <ul id="oE" class="dropdown-content">
+                <li><a href="index.html#OE">Preguntas</a></li>
+                <li><a href="orientadaEventos.html#OE">Actividades</a></li>
+            </ul>
+                <nav>
+                    <div class="nav-wrapper">
+                    <a href="#!" class="brand-logo">Logo</a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#Pasion">Pasión</a></li>
+                        <li><a href="index.html#HTML">HTML</a></li>
+                        <li><a href="index.html#CSS">CSS</a></li>
+                        <li><a class="dropdown-trigger" href="#!" data-target="js">JS<i class="material-icons right"></i></a></li>
+                        <li><a class="dropdown-trigger" href="#!" data-target="oE">Orientada a Eventos<i class="material-icons right"></i></a></li>
+                        <li><a href="index.html#About_Me">Acerca de Mi</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="References.html#Referencias">Referencias</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div id="OE"></div>
+            <h2>Laboratorio 6</h2>
+            <h3>Actividad 1:</h3>
+            <div class="container" onsubmit="return contrasena()">
+                <form class="form-inline">
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="form-group">
+                                    Contraseña: <input type="password" id="pass" class="form-inline" value="">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group">
+                                    Verificar Contraseña: <input type="password" id="ver" class="form-inline" value="">
+                                </div>
+                            </td>
+                            <button type="submit">Verificar</button>
+                        </tr>
+                    </table>
+                </form>
+                <span id="con" style="text-align: center;"></span>
+            </div>
+
+            <br>
+            
+            <h3>Actividad 2:</h3>
+            <div class="row">
+                <table>
+                    <tr>
+                        <td>
+                            <h4>Mona Lisa</h4>
+                            <img src="img/Lisa.jpg" style="height: 300px;">
+                        </td>
+                        <td>
+                            <h4>Lady with an Ermine</h4>
+                            <img src="img/Ermine.jpg" style="height: 300px;">
+                        </td>
+                        <td>
+                            <h4>René Magritte</h4>
+                            <img src="img/Rene.jpg" style="height: 300px;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Costo: 850000000$<br>
+                            <button onclick="lisa()" class="submit" style="background-color: dodgerblue;">+</button>
+                        </td>
+                        <td>
+                            Costo: 330000000$<br>
+                            <button onclick="ermine()" class="submit" style="background-color: dodgerblue;">+</button>
+                            </div>
+                        </td>
+                        <td>
+                            Costo: 500000000$<br>
+                            <button onclick="rene()" class="submit" style="background-color: dodgerblue;">+</button>
+                        </td>
+                    </tr>
+                </table>
+                <aside>
+                    <h2>Pinturas</h2>
+                    <ul id="pintura" class="list-group"></ul>
+                    <hr>
+            
+                    <p class="text-right">Total: <span id="total"></span>&dollar;</p>
+                    <button class="btn waves-effect waves-light" onclick="vaciar()">Vaciar</button>
+                </aside>
+            </div>
+    
+            <br>
+        </main>
+        <footer>
+            <p>
+                <em>Editor Usado: </em><a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>
+            </p>
+        </footer>
+        <script src="JS/oE.js"></script>
+        <script src="JS/materialize.js"></script>
+        <script>var dropdowns = document.querySelectorAll('.dropdown-trigger')
+            for (var i = 0; i < dropdowns.length; i++){
+                M.Dropdown.init(dropdowns[i]);
+            };</script>
+    </body>
+</html>

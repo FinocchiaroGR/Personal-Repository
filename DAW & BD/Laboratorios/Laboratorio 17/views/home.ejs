@@ -1,0 +1,25 @@
+<%- include('includes/head.ejs') %>
+    <body>
+        <h1>Lab 17 - Mis Mascotas</h1>
+        <div style="display:inline-block;vertical-align:top;">
+            <p>Conoce a mis Mascotas, y Recomiendame lo que Puedas!</p>
+            <ul>
+                <li>
+                    <a href="/mis-mascotas-actuales/mascotas" class="waves-effect waves-teal btn-flat">-> Mis Mascotas Actuales</a>
+                </li>
+                <li>
+                    <a href="/mis-mascotas-pasadas/mascotas" class="waves-effect waves-teal btn-flat">-> Mis Mascotas Pasadas</a>
+                </li>
+                <li>
+                    <a href="/trucos-a-ensenar/nuevo-truco" class="waves-effect waves-teal btn-flat">-> Trucos a Enseñar</a>
+                </li>
+                <li>
+                    <a href="/recomendacion-de-comida-para-perros/nueva-recomendacion" class="waves-effect waves-teal btn-flat">-> Recomendar Comida para Perros</a>
+                </li>
+            </ul>
+        </div>
+        <div style="display:inline-block;">
+            <img height="60%" src="/media/Photo.png" alt="Imagen con mi perrita Maia" style="position: absolute; right: 15px; top: 20%;">
+        </div>
+    </body>
+<%- include('includes/footer.ejs') %>

@@ -1,0 +1,29 @@
+<%- include('includes/head.ejs') %>
+    <body>
+        <p>
+            <a href="http://localhost:3000" class="waves-effect waves-teal btn-flat">
+                Home
+            </a>
+             > 
+             <a href="http://localhost:3000/mis-mascotas-actuales/mascotas" class="waves-effect waves-teal btn-flat">
+                Mis Mascotas Actuales
+            </a>
+             > 
+             <a href="http://localhost:3000/mis-mascotas-actuales/hara" class="waves-effect waves-teal btn-flat">
+                Hara
+            </a>
+        </p>
+        <h1><%= perros.nombre %></h1>
+        <table>
+            <tr>
+                <td>
+                    <div class="row">
+                              <img src="<%= perros.imagen %>">
+                    </div>
+                </td>
+                <td>
+                    <p style="text-align:center"><%= perros.contenido %></p>
+                </td>
+            </tr>
+        </table>
+<%- include('includes/footer.ejs') %>

@@ -1,0 +1,24 @@
+<%- include('includes/head.ejs') %>
+    <body>
+        <p>
+            <a href="http://localhost:3000" class="waves-effect waves-teal btn-flat">
+                Home
+            </a>
+             > 
+             <a href="http://localhost:3000/trucos-a-ensenar/nuevo-truco" class="waves-effect waves-teal btn-flat">
+                Trucos a Enseñar
+            </a>
+        </p>
+        <form action="nuevo-truco" method="POST">
+            <input type="text" name="Nombre" required>
+            <label>Escribe un truco para enseñarle a Maia</label>
+                <br>
+            <input type="submit" name="Caso" value="Enseñar">
+        </form>
+        <div>
+            <p>
+                Último Truco: <%- ultimo_truco %>
+            </p>
+        </div>
+    </body>
+<%- include('includes/footer.ejs') %>

@@ -1,3 +1,9 @@
+const trucos = [
+    {
+        truco: 'A Atrapar un Frisbee'
+    }
+];
+
 const db = require('../util/database');
 
 module.exports = class Truco {

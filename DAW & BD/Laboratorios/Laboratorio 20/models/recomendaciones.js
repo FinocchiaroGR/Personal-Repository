@@ -1,3 +1,9 @@
+const recomendaciones = [
+    {
+        reco: 'Blue Buffalo Wilderness'
+    }
+];
+
 const db = require('../util/database');
 
 module.exports = class Recomendaciones {

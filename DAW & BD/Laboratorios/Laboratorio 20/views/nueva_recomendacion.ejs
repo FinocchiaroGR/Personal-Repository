@@ -1,0 +1,26 @@
+<%- include('includes/head.ejs') %>
+    <body>
+        <a href="/usuarios/logout" class="right waves-effect waves-light btn">Salir</a>
+        <p>
+            <a href="http://localhost:3000" class="waves-effect waves-teal btn-flat">
+                Home
+            </a>
+             > 
+             <a href="http://localhost:3000/recomendacion-de-comida-para-perros/nueva-recomendacion" class="waves-effect waves-teal btn-flat">
+                Recomendacion de Comida para Perros
+            </a>
+        </p>
+        <form action="nueva-recomendacion" method="POST">
+            <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+            <input type="text" name="Nombre" required>
+            <label>Escribe una comida nutritiva para Maia</label>
+                <br>
+            <input class="waves-effect waves-light btn" type="submit" name="Caso" value="Recomendacion">
+        </form>
+        <div>
+            <p>
+                Última Recomendación: <%- ultima_recomendacion %>
+            </p>
+        </div>
+    </body>
+<%- include('includes/footer.ejs') %>

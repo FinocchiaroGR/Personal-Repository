@@ -1,0 +1,20 @@
+<table class="striped highlight">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Fecha</th>
+            <th>Lugar</th>
+            <th>Tipo</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% for (let incidente of incidentes) { %>
+            <tr>
+                <td><%= incidente.id %></td>
+                <td><%= incidente.fecha %></td>
+                <td><%= incidente.lugar %></td>
+                <td><%= incidente.tipo %></td>
+           </tr>
+        <% } %>
+    </tbody>
+</table>

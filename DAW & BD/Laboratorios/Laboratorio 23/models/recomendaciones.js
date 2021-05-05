@@ -15,4 +15,8 @@ module.exports = class Recomendaciones {
     static fetchAll(){
         return db.execute('SELECT * FROM recomendaciones');
     }
+
+    static delete(reco) {
+        return db.execute('DELETE FROM recomendaciones WHERE reco = ?', [reco]);
+    }
 };

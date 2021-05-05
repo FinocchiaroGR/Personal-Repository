@@ -1,0 +1,56 @@
+<div class="row" id="lista_reco">
+    <% for (let recomendacion of recomendaciones) { %>
+        <div class="col l3 m4 s12">
+            <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="<%= recomendacion.imagen %>">
+            </div>
+            <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4"><%= recomendacion.reco %><i class="material-icons right">more_vert</i></span>
+                <button class="red white-text" onclick="eliminar(<%= recomendacion.reco %>)"><i class="small material-icons">delete</i></button>
+            </div>
+            </div>
+        </div>
+    <% } %>
+</div>
+
+<script>
+    const eliminar = (reco) => {
+        console.log('aqui estoy')
+        
+        let data = {recomendacion: reco};
+        console.log(data);
+
+        fetch('/recomendacion-de-comida-para-perros/eliminar', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+                //'csrf-token': csrf
+            },
+            body: JSON.stringify(data)
+        }).then(result => {
+            return result.json();
+        }).then(data => {
+            console.log("Respuesta de la petición asíncrona");
+            console.log(data);
+            let html = '';
+            for (let recomendacion of data.recomendaciones) { 
+                html += '<div class="col l3 m4 s12">' +
+                            '<div class="card">' +
+                                '<div class="card-image waves-effect waves-block waves-light">' +
+                                    '<img class="activator" src="' + recomendacion.imagen + '">' +
+                                '</div>' +
+                                '<div class="card-content">' +
+                                    '<span class="card-title activator grey-text text-darken-4">' + recomendacion.reco + '<i class="material-icons right">more_vert</i></span>' +
+                                    '<button class="red white-text" onclick="eliminar('+ recomendacion.reco +')"><i class="small material-icons">delete</i></button>' +
+                                '</div>' +
+                            '</div>' +
+                        '</div>';
+            }
+            document.getElementById('lista_reco').innerHTML = html;
+            M.toast({html: 'La recomendacion fue eliminada de la lista'})
+        }).catch(err => {
+            console.log(err);
+        });
+    };
+</script>

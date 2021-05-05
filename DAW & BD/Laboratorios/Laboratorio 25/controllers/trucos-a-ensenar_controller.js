@@ -1,0 +1,30 @@
+const file_system = require('fs');
+const Truco = require('../models/trucos');
+
+exports.getNuevoTruco = (request, response, next) => {
+    response.setHeader('Set-Cookie', 'Truco="Gracias por recomendar un Truco"; HttpOnly');
+    response.render('nuevo_truco', {
+        csrfToken: request.csrfToken(),
+        titulo: "Nuevo Truco - Para Enseñar",
+        ultimo_truco: request.session.ultimo_truco === undefined ? "No hay Trucos Recientes" : request.session.ultimo_truco
+    });
+};
+
+exports.postNuevoTruco = (request, response, next) => {
+    console.log(request.body);
+   file_system.writeFileSync('trucos.txt', request.body.Nombre);
+
+    const truco = new Truco(request.body.Nombre);
+    truco.save()
+        .then(() => {
+            const nombre = request.body.Nombre;
+            request.session.ultimo_truco = request.body.Nombre;
+            response.render('gracias_truco', {
+                titulo: "Gracias",
+                nombre: nombre
+            });
+        })
+        .catch(err => {
+            console.log(err)
+        });
+};

@@ -1,0 +1,26 @@
+<%- include('includes/head.ejs') %>
+    <body>
+        <a href="/usuarios/logout" class="right waves-effect waves-light btn">Salir</a>
+        <p>
+            <a href="http://localhost:3000" class="waves-effect waves-teal btn-flat">
+                Home
+            </a>
+             > 
+             <a href="http://localhost:3000/mis-mascotas-pasadas/mascotas" class="waves-effect waves-teal btn-flat">
+                Mis Mascotas Pasadas
+            </a>
+        </p>
+        <h1><%= perros[0].nombre %></h1>
+        <table>
+            <tr>
+                <td>
+                    <img alt="Imagen de Border Collie" src="<%= perros[0].imagen %>">
+                </td>
+                <td>
+                    <p style="text-align:center"><%= perros[0].contenido %></p>
+                    <p style="text-align:center"><%= perros[0].nota %></p>
+                </td>
+            </tr>
+        </table>
+    </body>
+<%- include('includes/footer.ejs') %>

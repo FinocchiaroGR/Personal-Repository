@@ -1,0 +1,20 @@
+<%- include('includes/head.ejs') %>
+    <body>
+        <h1><%= titulo %></h1>
+        <div style="display:inline-block;vertical-align:top;">
+            <% if (error !== false) { %>
+                <span class="red"><%- error %></span>
+            <% } %>
+            <form action= "login" method="POST">
+                <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+                <label for="username">Nombre del usuario</label>
+                <input type="text" name="username" required>
+
+                <label for="password">Password</label>
+                <input type="password" name="password" required minlength="8">
+
+                <input class="waves-effect waves-light btn" type="submit" name="enviar" value="Entrar">     <a class="waves-effect waves-light btn" href="http://localhost:3000/usuarios/new">Registrarse</a>
+            </form>
+        </div>
+    </body>
+<%- include('includes/footer.ejs') %></body>
